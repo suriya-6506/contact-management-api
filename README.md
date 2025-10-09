@@ -1,2 +1,7 @@
-# contact-management-api
-This project is a RESTful API for managing contacts. It allows users to perform standard CRUD (Create, Read, Update, Delete) operations via HTTP requests, which can be sent from a tool like Postman or integrated into a front-end application.
+The RESTful Contact Management System is a browser-based application that allows users to manage personal or professional contact details efficiently. It is built entirely with HTML, CSS, and JavaScript — no server or external database is required. All data is stored locally within the user’s browser using the localStorage API,ensuring persistence even after page refresh.
+
+How It Works: The HTML defines the structure: an input form for data entry and a table for displaying contacts. The CSS styles the interface with responsive design and clean layout. The embedded JavaScript implements CRUD operations: Create: Validates input and saves the new contact object into the array and localStorage. Read: Loads stored data from localStorage and renders it in the table. Update: Replaces existing contact data by ID when edited. Delete: Removes the contact object from the array and updates localStorage. Each contact is assigned a unique ID using a simple random generator (Date.now() + random string).
+
+Advantages: Works offline without any backend setup. Easy to deploy — just open the HTML file in any browser. Demonstrates REST-like behavior (CRUD) using client-side logic. Provides user-friendly features such as search, import/export, and validation.
+
+Technologies Used: HTML5 for structure and layout. CSS3 for styling and responsiveness. Vanilla JavaScript (ES6) for functionality and data manipulation. localStorage API for persistent data storage.
